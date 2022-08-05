@@ -1,0 +1,36 @@
+#root {
+  height: 100vh;
+  @include media-breakpoint-down(xl) { 
+    height: 100%;
+  }
+}
+
+.h1 {
+  font-weight: 800;
+}
+
+.form-control {
+  background-color: transparent;
+  border: 2px solid $third-color;
+  opacity: 0.8;
+
+  &:focus {
+    background-color: $fifth-color;
+  }
+}
+
+.btn {
+  font-weight: 700;
+  color: $primary-color;
+}
+
+.dropdown-menu {
+  background-color: $info;
+}
+
+.dropdown-item {
+  &:hover,
+  &:focus {
+    background-color: $secondary-color;
+  }
+}
